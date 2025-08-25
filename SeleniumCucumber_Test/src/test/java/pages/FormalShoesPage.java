@@ -10,15 +10,14 @@ public class FormalShoesPage {
 
     public static String classic_cheltenham_radio_btn = "/html/body/div[2]/table/tbody/tr[1]/td[1]/input";
 
-    public static void click_classiccheltenham_btn() {
-
-        driver.findElement(By.xpath(classic_cheltenham_radio_btn)).click();
-    }
-
     public static String color_dropdown_xpath = "/html/body/div[2]/table/tbody/tr[1]/td[3]/select";
 
     public static String brown_option_click = "/html/body/div[2]/table/tbody/tr[1]/td[3]/select/option[2]";
 
+    public static void click_classiccheltenham_btn() {
+
+        driver.findElement(By.xpath(classic_cheltenham_radio_btn)).click();
+    }
 
     public static void click_dropdown_button() throws InterruptedException {
 
