@@ -7,5 +7,6 @@ Feature: LoggedIn User View
     Then User navigates to the exclusive collection page
     Then User clicks on shoe name radio button
     Then User clicks on brown option from shoe color dropdown
+    Then User clicks on preferred size from shoe size dropdown
 
 

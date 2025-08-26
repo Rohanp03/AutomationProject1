@@ -14,6 +14,9 @@ public class FormalShoesPage {
 
     public static String brown_option_click = "/html/body/div[2]/table/tbody/tr[1]/td[3]/select/option[2]";
 
+    public static String size_dropdown_xpath = "/html/body/div[2]/table/tbody/tr[1]/td[4]/select";
+    public static String preferred_option_xpath = "/html/body/div[2]/table/tbody/tr[1]/td[4]/select/option[4]";
+
     public static void click_classiccheltenham_btn() {
 
         driver.findElement(By.xpath(classic_cheltenham_radio_btn)).click();
@@ -30,6 +33,20 @@ public class FormalShoesPage {
         Thread.sleep(2000);
         driver.findElement(By.xpath(brown_option_click)).click();
     }
+
+    public static void click_sizedropdown_btn() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(size_dropdown_xpath)).click();
+    }
+
+    public static void click_preferred_option() throws InterruptedException {
+
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(preferred_option_xpath)).click();
+    }
+
+
 
 
 }

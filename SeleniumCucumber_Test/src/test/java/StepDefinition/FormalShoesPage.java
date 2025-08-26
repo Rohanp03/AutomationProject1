@@ -22,7 +22,15 @@ public class FormalShoesPage {
 
         click_brownshoes_option();
 
+    }
 
+    @Then("^User clicks on preferred size from shoe size dropdown$")
+
+    public void user_clicks_on_preferred_size_from_shoe_size_dropdown() throws Throwable{
+
+        click_sizedropdown_btn();
+
+        click_preferred_option();
 
 
     }
