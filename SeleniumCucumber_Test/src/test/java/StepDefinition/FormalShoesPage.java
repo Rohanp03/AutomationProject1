@@ -1,6 +1,7 @@
 package StepDefinition;
 
 import io.cucumber.java.en.Then;
+import net.bytebuddy.implementation.bytecode.Throw;
 
 import static pages.FormalShoesPage.*;
 
@@ -33,5 +34,12 @@ public class FormalShoesPage {
         click_preferred_option();
 
 
+    }
+
+    @Then("^User clicks on add to cart button$")
+
+    public void user_clicks_on_add_to_cart_button() throws Throwable{
+
+        click_addtocart_btn();
     }
 }

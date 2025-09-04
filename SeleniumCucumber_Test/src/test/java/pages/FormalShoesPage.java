@@ -9,13 +9,13 @@ import static utility.BrowserDriver.driver;
 public class FormalShoesPage {
 
     public static String classic_cheltenham_radio_btn = "/html/body/div[2]/table/tbody/tr[1]/td[1]/input";
-
     public static String color_dropdown_xpath = "/html/body/div[2]/table/tbody/tr[1]/td[3]/select";
-
     public static String brown_option_click = "/html/body/div[2]/table/tbody/tr[1]/td[3]/select/option[2]";
-
     public static String size_dropdown_xpath = "/html/body/div[2]/table/tbody/tr[1]/td[4]/select";
     public static String preferred_option_xpath = "/html/body/div[2]/table/tbody/tr[1]/td[4]/select/option[4]";
+    public static String addtocart_btn_xpath = "/html/body/div[2]/table/tbody/tr[1]/td[6]/button";
+
+
 
     public static void click_classiccheltenham_btn() {
 
@@ -46,7 +46,11 @@ public class FormalShoesPage {
         driver.findElement(By.xpath(preferred_option_xpath)).click();
     }
 
+    public static void click_addtocart_btn() throws InterruptedException {
 
+        Thread.sleep(2000);
+        driver.findElement(By.xpath(addtocart_btn_xpath)).click();
+    }
 
 
 }
